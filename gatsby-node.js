@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
       // optional but is often necessary so the template
       // can query data specific to each page.
       path: `/${edge.node.slug}/`,
-      component: slash(edge.node.template === 'portfolio_under_content.php' ? portfolioUnderContentTemplate : pageTemplate),,
+      component: slash(edge.node.template === 'portfolio_under_content.php' ? portfolioUnderContentTemplate : pageTemplate),
       context: edge.node,
     })
   })
